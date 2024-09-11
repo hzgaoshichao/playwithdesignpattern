@@ -1,5 +1,5 @@
 [1]: https://juejin.cn/post/6844903703447765005
-[2]: https://github.com/hzgaoshichao/playwithdesignpattern/tree/49123a2986d662a10d4f0ace9b81cf68011ef2bd/chapter01/1.10-simplefactory
+[2]: https://github.com/hzgaoshichao/playwithdesignpattern/tree/main/chapter01/1.10-simplefactory
 [3]: https://design-patterns.readthedocs.io/zh-cn/latest/creational_patterns/simple_factory.html
 [4]: https://book.douban.com/subject/2334288/
 [5]: https://design-patterns.readthedocs.io/zh-cn/latest/index.html
@@ -24,7 +24,7 @@
 
 注：在最终代码中，依赖关系体现为类构造方法及类方法的传入参数，箭头的指向为调用关系；依赖关系除了临时知道对方外，还“使用”对方的方法和属性；
 ## 代码实现
-源码下载地址: [github.com/chapter01/1.10-simplefactory][3]
+源码下载地址: [github.com/chapter01/1.10-simplefactory][2]
 
 ## 典型应用场景
 - 简单工厂模式的要点在于：当你需要什么，只需要传入一个正确的参数，就可以获取你所需要的对象，而无须知道其创建细节。简单工厂模式结构比较简单，其核心是工厂类的设计
