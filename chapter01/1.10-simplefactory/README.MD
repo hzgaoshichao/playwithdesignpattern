@@ -1,6 +1,10 @@
 [1]: https://juejin.cn/post/6844903703447765005
 [2]: https://github.com/hzgaoshichao/playwithdesignpattern/tree/49123a2986d662a10d4f0ace9b81cf68011ef2bd/chapter01/1.10-simplefactory
 [3]: https://design-patterns.readthedocs.io/zh-cn/latest/creational_patterns/simple_factory.html
+[4]: https://book.douban.com/subject/2334288/
+[5]: https://design-patterns.readthedocs.io/zh-cn/latest/index.html
+## 关于
+<<大话设计模式 Golang 版>> 是将 [<<大话设计模式 (作者:程杰)>>][4] 里面的 Java 代码用 Golang 重新写了一遍, 然后结合 [图说设计模式][5] 做总结归纳
 
 ## 简述
 简单工厂模式(Simple Factory Pattern)：又称为静态工厂方法(Static Factory Method)模式，它属于类创建型模式。在简单工厂模式中，可以根据参数的不同返回不同类的实例。简单工厂模式专门定义一个类来负责创建其他类的实例，被创建的实例通常都具有共同的父类。
