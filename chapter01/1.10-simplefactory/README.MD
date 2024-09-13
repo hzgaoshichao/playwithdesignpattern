@@ -1,10 +1,10 @@
 [1]: https://juejin.cn/post/6844903703447765005
 [2]: https://github.com/hzgaoshichao/playwithdesignpattern/tree/main/chapter01/1.10-simplefactory
 [3]: https://design-patterns.readthedocs.io/zh-cn/latest/creational_patterns/simple_factory.html
-[4]: https://book.douban.com/subject/2334288/
+[4]: https://book.douban.com/subject/36116620/
 [5]: https://design-patterns.readthedocs.io/zh-cn/latest/index.html
 ## 关于
-<<大话设计模式 Golang 版>> 是将 [<<大话设计模式 (作者:程杰)>>][4] 里面的 Java 代码用 Golang 重新写了一遍, 然后结合 [图说设计模式][5] 做总结归纳
+**大话设计模式 Golang 版** 是将 [<<大话设计模式【Java溢彩加强版】(作者:程杰)>>][4] 里面的 Java 代码用 Golang 重新写了一遍, 然后结合 [图说设计模式][5] 做总结归纳
 
 ## 简述
 简单工厂模式(Simple Factory Pattern)：又称为静态工厂方法(Static Factory Method)模式，它属于类创建型模式。在简单工厂模式中，可以根据参数的不同返回不同类的实例。简单工厂模式专门定义一个类来负责创建其他类的实例，被创建的实例通常都具有共同的父类。
@@ -12,7 +12,7 @@
 ## UML 结构
 下面的 UML 图是原书中使用 Java 的 UML 图, 由于 Golang 中没有抽象类, 所以在代码实现时需要将 Java 中的抽象类转换为接口来实现
 
-![simplefactory uml](../../images/01-simplefactory-uml.png)
+![simplefactory uml](../../images/01-01-simplefactory-uml.png)
 - 简单工厂类和运算类是一种依赖关系，使用带箭头的虚线表示；
 
 **依赖关系(dependency)**  
