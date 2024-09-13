@@ -12,7 +12,7 @@
 ## UML 结构
 下面的 UML 图是原书中使用 Java 的 UML 图, 由于 Golang 中没有抽象类, 所以在代码实现时需要将 Java 中的抽象类转换为接口来实现
 
-![strategy uml](../../images/02-01-strategy-uml.png)
+![strategy uml](../images/02-01-strategy-uml.png)
 
 - Context 和 Strategy 是一种聚合关系(aggregation)，用一条带空心菱形箭头的直线表示；
 

@@ -12,7 +12,7 @@
 ## UML 结构
 下面的 UML 图是原书中使用 Java 的 UML 图, 由于 Golang 中没有抽象类, 所以在代码实现时需要将 Java 中的抽象类转换为接口来实现
 
-![simplefactory uml](../../images/01-01-simplefactory-uml.png)
+![simplefactory uml](../images/01-01-simplefactory-uml.png)
 - 简单工厂类和运算类是一种依赖关系，使用带箭头的虚线表示；
 
 **依赖关系(dependency)**  
