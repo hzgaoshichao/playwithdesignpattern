@@ -1,4 +1,4 @@
-package main
+package personfinery
 
 import "fmt"
 
@@ -10,6 +10,6 @@ func NewPerson(name string) Person {
 	return Person{name: name}
 }
 
-func (p *Person) show() {
-	fmt.Printf("装扮的: %s", p.name)
+func (p *Person) Show() {
+	fmt.Printf("装扮的 %s \n", p.name)
 }
