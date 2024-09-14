@@ -1,5 +1,5 @@
-package main
+package cashregister
 
-type SaleInterface interface {
+type Sale interface {
 	acceptCash(price float64, num int) float64
 }

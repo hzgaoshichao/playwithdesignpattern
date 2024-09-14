@@ -1,4 +1,4 @@
-package main
+package cashregister
 
 import (
 	"math"
