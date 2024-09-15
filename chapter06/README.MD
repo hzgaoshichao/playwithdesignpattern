@@ -30,7 +30,7 @@
 由于 Golang 中没有抽象类, 实现方式上和 Java 有些不同:
 
 Component 是个接口类型
-```Go
+```go
 type Component interface {
 	Operation()
 }
@@ -44,7 +44,7 @@ func (c *ConcreteComponent) Operation() {
 ```
 
 Decorator 也是个接口类型, 然后将 Component 嵌入到 Decorator. 注意 DecoratorCommon 的使用, 我们可以将具体装饰器 (ConcreteDecoratorA )共同的部分提取到这个结构体中, 然后在具体装饰器中嵌入 DecoratorCommon 结构体, 这样的实现就类似于 Java 中的抽象类.
-```Go
+```go
 type Decorator interface {
 	Component
 	SetComponent()
