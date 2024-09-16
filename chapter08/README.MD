@@ -21,7 +21,7 @@
 ![chapter08-01-uml.png](../images/chapter08-01-uml.png)
 
 
-- Creator 和 Product 是一种依赖关系，使用带箭头的虚线表示；；
+- Creator 和 Product 是一种依赖关系，使用带箭头的虚线表示；
 
 **依赖关系 (dependency)**   
 
