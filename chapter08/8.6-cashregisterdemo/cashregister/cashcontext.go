@@ -1,11 +1,11 @@
-package main
+package cashregister
 
 type CashContext struct {
-	saleInterface SaleInterface
+	sale Sale
 }
 
 func NewCashContext(cashType int) CashContext {
-	var fs factoryInterface
+	var fs factory
 	switch cashType {
 	case 1: // 原价
 		fs = NewCashRebateReturnFactory(1, 0, 0)
@@ -22,10 +22,10 @@ func NewCashContext(cashType int) CashContext {
 	}
 
 	return CashContext{
-		saleInterface: fs.createSalesMode(),
+		sale: fs.createSalesMode(),
 	}
 }
 
 func (cc CashContext) GetResult(price float64, num int) float64 {
-	return cc.saleInterface.acceptCash(price, num)
+	return cc.sale.acceptCash(price, num)
 }

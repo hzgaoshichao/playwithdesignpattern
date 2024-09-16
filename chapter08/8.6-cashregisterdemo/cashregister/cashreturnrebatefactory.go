@@ -1,4 +1,4 @@
-package main
+package cashregister
 
 type cashReturnRebateFactory struct {
 	moneyRebate    float64
@@ -14,7 +14,7 @@ func NewCashReturnRebateFactory(moneyCondition int, moneyReturn int, moneyRebate
 	}
 }
 
-func (crr *cashReturnRebateFactory) createSalesMode() SaleInterface {
+func (crr *cashReturnRebateFactory) createSalesMode() Sale {
 	//先满返, 再打折
 	cn := NewCashNormal()
 	cret := newCashReturn(crr.moneyCondition, crr.moneyReturn)
