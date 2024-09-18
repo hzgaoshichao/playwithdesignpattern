@@ -31,9 +31,6 @@ func (t *testPaperCommon) testQuestion3(p testPaper) {
 
 func TemplateMethod(t testPaper) {
 	t.testQuestion1(t)
-	t.answer1()
 	t.testQuestion2(t)
-	t.answer2()
 	t.testQuestion3(t)
-	t.answer3()
 }
