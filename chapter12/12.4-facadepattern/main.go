@@ -1,6 +1,6 @@
 package main
 
-import f "facadepattern/facade"
+import f "facadepattern/facadedemo"
 
 func main() {
 	facade := f.NewFacade()
