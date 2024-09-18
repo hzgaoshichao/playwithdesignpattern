@@ -1,4 +1,4 @@
-package main
+package facade
 
 type Facade struct {
 	one   *subSystemOne
@@ -21,14 +21,14 @@ func NewFacade() *Facade {
 	}
 }
 
-func (f *Facade) methodA() {
+func (f *Facade) MethodA() {
 	f.one.methodOne()
 	f.two.methodTwo()
 	f.three.methodThree()
 	f.four.methodFour()
 }
 
-func (f *Facade) methodB() {
+func (f *Facade) MethodB() {
 	f.two.methodTwo()
 	f.three.methodThree()
 

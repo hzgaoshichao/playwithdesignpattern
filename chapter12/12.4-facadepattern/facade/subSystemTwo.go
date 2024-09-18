@@ -1,4 +1,4 @@
-package main
+package facade
 
 import "fmt"
 
@@ -6,5 +6,5 @@ type subSystemTwo struct {
 }
 
 func (s subSystemTwo) methodTwo() {
-	fmt.Printf("子系统方法二")
+	fmt.Printf("子系统方法二 \n")
 }
