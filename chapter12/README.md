@@ -17,7 +17,7 @@
 下面的 UML 图是原书中使用 Java 的 UML 图
 
 ![chapter12-01-uml.png](../images/chapter12-01-uml.png)
-Facade 和 SubSystemOne... 之间是一种聚合关系(aggregation)，用一条带空心菱形箭头的直线表示；
+- Facade 和 SubSystemOne... 之间是一种聚合关系(aggregation)，用一条带空心菱形箭头的直线表示；
 
 **聚合关系(aggregation)**
 聚合关系用一条带空心菱形箭头的直线表示，如上图表示 SubSystemOne... 聚合到 Facade 上，或者说 Facade 由 SubSystemOne, SubSystemTwo, SubSystemThree, SubSystemFour 组成；
