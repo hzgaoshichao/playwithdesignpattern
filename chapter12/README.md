@@ -17,6 +17,14 @@
 下面的 UML 图是原书中使用 Java 的 UML 图
 
 ![chapter12-01-uml.png](../images/chapter12-01-uml.png)
+Facade 和 SubSystemOne... 之间是一种聚合关系(aggregation)，用一条带空心菱形箭头的直线表示；
+
+**聚合关系(aggregation)**
+聚合关系用一条带空心菱形箭头的直线表示，如上图表示 SubSystemOne... 聚合到 Facade 上，或者说 Facade 由 SubSystemOne, SubSystemTwo, SubSystemThree, SubSystemFour 组成；
+
+聚合关系用于表示实体对象之间的关系，表示整体由部分构成的语义, 表示一种弱的 "拥有"关系, 体现的是A对象可以包含B对象, 但是B对象不是A对象的一部分；例如一个部门由多个员工组成；
+
+与组合关系不同的是，整体和部分不是强依赖的，即使整体不存在了，部分仍然存在；例如， 部门撤销了，人员不会消失，他们依然存在
 
 ## 代码实现
 **源码下载地址**: [github.com/chapter10][2]
