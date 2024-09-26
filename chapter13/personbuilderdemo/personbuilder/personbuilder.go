@@ -1,4 +1,4 @@
-package main
+package personbuilder
 
 type PersonBuilder struct {
 	person *Person
