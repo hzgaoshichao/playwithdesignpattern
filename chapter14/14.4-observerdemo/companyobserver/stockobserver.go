@@ -1,4 +1,4 @@
-package main
+package companyobserver
 
 import "fmt"
 
@@ -7,7 +7,7 @@ type StockObserver struct {
 }
 
 func (so StockObserver) update() {
-	fmt.Printf("%v: %v %v 请关闭股票行情,赶紧离开 \n", so.sub.getSubject().name, so.sub.getSubject().getAction(), so.Observer.name)
+	fmt.Printf("%v: %v %v 请关闭股票行情,赶紧离开 \n", so.sub.GetSubject().name, so.sub.GetSubject().GetAction(), so.Observer.name)
 }
 
 func NewStockObserver(name string, sub SubjectInterface) StockObserver {

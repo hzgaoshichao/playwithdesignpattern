@@ -1,4 +1,4 @@
-package main
+package companyobserver
 
 type ObserverInterface interface {
 	update()

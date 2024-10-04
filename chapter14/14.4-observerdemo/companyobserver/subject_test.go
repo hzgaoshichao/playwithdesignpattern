@@ -1,4 +1,4 @@
-package main
+package companyobserver
 
 import (
 	"fmt"
@@ -12,13 +12,13 @@ type Value struct {
 }
 
 func TestDetach(t *testing.T) {
-	v1 := Value{Name: "煎鱼", Gender: new(string)}
-	v2 := Value{Name: "煎鱼", Gender: new(string)}
+	v1 := Value{Name: "Tom", Gender: new(string)}
+	v2 := Value{Name: "Tom", Gender: new(string)}
 	//  if v1 == v2 {
 	if reflect.DeepEqual(v1, v2) {
-		fmt.Println("脑子进煎鱼了")
+		fmt.Println("相等")
 		return
 	}
 
-	fmt.Println("脑子没进煎鱼")
+	fmt.Println("不相等")
 }
