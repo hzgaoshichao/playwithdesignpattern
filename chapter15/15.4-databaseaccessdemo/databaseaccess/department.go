@@ -1,8 +1,8 @@
-package main
+package databaseaccess
 
 type DepartmentInterface interface {
-	insert(department Department)
-	getDepartment(id int) *Department
+	Insert(department Department)
+	GetDepartment(id int) *Department
 }
 
 type Department struct {

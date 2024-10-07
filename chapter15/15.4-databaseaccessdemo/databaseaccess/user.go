@@ -1,8 +1,8 @@
-package main
+package databaseaccess
 
 type UserInterface interface {
-	insert(user User)
-	getUser(id int) *User
+	Insert(user User)
+	GetUser(id int) *User
 }
 
 type User struct {

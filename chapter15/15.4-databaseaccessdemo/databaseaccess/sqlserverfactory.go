@@ -1,4 +1,4 @@
-package main
+package databaseaccess
 
 type SqlserverFactory struct {
 }
