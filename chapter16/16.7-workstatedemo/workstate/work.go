@@ -1,4 +1,4 @@
-package main
+package workstate
 
 type Work struct {
 	current      StateInterface
@@ -16,22 +16,22 @@ func (w *Work) SetState(s StateInterface) {
 	w.current = s
 }
 
-func (w *Work) writeProgram() {
+func (w *Work) WriteProgram() {
 	w.current.writeProgram(w)
 }
 
-func (w *Work) getHour() int {
+func (w *Work) GetHour() int {
 	return w.hour
 }
 
-func (w *Work) setHour(h int) {
+func (w *Work) SetHour(h int) {
 	w.hour = h
 }
 
-func (w *Work) getWorkFinished() bool {
+func (w *Work) GetWorkFinished() bool {
 	return w.workFinished
 }
 
-func (w *Work) setWorkFinished(value bool) {
+func (w *Work) SetWorkFinished(value bool) {
 	w.workFinished = value
 }

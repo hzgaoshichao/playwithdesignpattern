@@ -1,4 +1,4 @@
-package main
+package statepattern
 
 type StateInterface interface {
 	handle(context *Context)

@@ -1,4 +1,4 @@
-package main
+package statepattern
 
 import (
 	"fmt"
@@ -24,6 +24,6 @@ func (c *Context) setState(s StateInterface) {
 	fmt.Printf("当前状态: %v \n", reflect.TypeOf(c.state))
 }
 
-func (c *Context) request() {
+func (c *Context) Request() {
 	c.state.handle(c)
 }
