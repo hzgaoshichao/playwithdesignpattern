@@ -1,4 +1,4 @@
-package main
+package basketballtranslator
 
 import "fmt"
 
@@ -6,18 +6,18 @@ type forward struct {
 	player
 }
 
-func NewForward(name string) forward {
-	return forward{
+func NewForward(name string) *forward {
+	return &forward{
 		player{
 			name: name,
 		},
 	}
 }
 
-func (f *forward) attack() {
+func (f *forward) Attack() {
 	fmt.Printf("Forward attack!!!! \n")
 }
 
-func (f *forward) defense() {
+func (f *forward) Defense() {
 	fmt.Printf("Forward defense!!!! \n")
 }

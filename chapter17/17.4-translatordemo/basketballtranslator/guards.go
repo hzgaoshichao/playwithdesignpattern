@@ -1,4 +1,4 @@
-package main
+package basketballtranslator
 
 import "fmt"
 
@@ -14,10 +14,10 @@ func NewGuards(name string) *guards {
 	}
 }
 
-func (g *guards) attack() {
+func (g *guards) Attack() {
 	fmt.Printf("guards attack!!!! \n")
 }
 
-func (g *guards) defense() {
+func (g *guards) Defense() {
 	fmt.Printf("guards defense!!!! \n")
 }
