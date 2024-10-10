@@ -1,4 +1,4 @@
-package main
+package compositepattern
 
 import (
 	"fmt"
@@ -18,11 +18,11 @@ func NewComposite(name string) *composite {
 	}
 }
 
-func (c *composite) add(value componentInterface) {
+func (c *composite) Add(value componentInterface) {
 	c.children = append(c.children, value)
 }
 
-func (c *composite) remove(value componentInterface) {
+func (c *composite) Remove(value componentInterface) {
 	for i, child := range c.children {
 		//if reflect.DeepEqual(value, child) // 这里涉及到结构体的比较, 需要特别注意 // 参考链接: https://segmentfault.com/a/1190000040099215
 		if reflect.DeepEqual(value, child) {
@@ -31,7 +31,7 @@ func (c *composite) remove(value componentInterface) {
 	}
 }
 
-func (c *composite) display(depth int) {
+func (c *composite) Display(depth int) {
 	for i := 0; i < depth; i++ {
 		fmt.Printf("-")
 	}
@@ -39,7 +39,7 @@ func (c *composite) display(depth int) {
 	fmt.Printf("%v \n", c.component.name)
 
 	for _, item := range c.children {
-		item.display(depth + 2)
+		item.Display(depth + 2)
 	}
 
 }

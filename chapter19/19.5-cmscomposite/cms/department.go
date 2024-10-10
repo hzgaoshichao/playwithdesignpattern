@@ -1,4 +1,4 @@
-package main
+package cms
 
 import (
 	"fmt"
@@ -14,15 +14,15 @@ func NewHRDepartment(name string) *hrDepartment {
 	}
 }
 
-func (h *hrDepartment) add(com companyInterface) {
+func (h *hrDepartment) Add(com companyInterface) {
 
 }
 
-func (h *hrDepartment) remove(com companyInterface) {
+func (h *hrDepartment) Remove(com companyInterface) {
 
 }
 
-func (h *hrDepartment) display(depth int) {
+func (h *hrDepartment) Display(depth int) {
 	for i := 0; i < depth; i++ {
 		fmt.Printf("-")
 	}
@@ -30,7 +30,7 @@ func (h *hrDepartment) display(depth int) {
 
 }
 
-func (h *hrDepartment) lineOfDuty() {
+func (h *hrDepartment) LineOfDuty() {
 
 	fmt.Printf("%v 员工招聘培训管理 \n", h.name)
 }

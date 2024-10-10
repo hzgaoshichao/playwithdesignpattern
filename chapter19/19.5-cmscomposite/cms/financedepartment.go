@@ -1,4 +1,4 @@
-package main
+package cms
 
 import "fmt"
 
@@ -10,15 +10,15 @@ func NewFinanceDepartment(name string) *financeDepartment {
 	return &financeDepartment{name: name}
 }
 
-func (f *financeDepartment) add(com companyInterface) {
+func (f *financeDepartment) Add(com companyInterface) {
 
 }
 
-func (f *financeDepartment) remove(com companyInterface) {
+func (f *financeDepartment) Remove(com companyInterface) {
 
 }
 
-func (f *financeDepartment) display(depth int) {
+func (f *financeDepartment) Display(depth int) {
 	for i := 0; i < depth; i++ {
 		fmt.Printf("-")
 	}
@@ -26,7 +26,7 @@ func (f *financeDepartment) display(depth int) {
 
 }
 
-func (f *financeDepartment) lineOfDuty() {
+func (f *financeDepartment) LineOfDuty() {
 
 	fmt.Printf("%v 公司财务收支管理 \n", f.name)
 }

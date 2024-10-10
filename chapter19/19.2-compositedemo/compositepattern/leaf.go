@@ -1,4 +1,4 @@
-package main
+package compositepattern
 
 import "fmt"
 
@@ -12,15 +12,15 @@ func NewLeaf(name string) *leaf {
 	}
 }
 
-func (l *leaf) add(component componentInterface) {
+func (l *leaf) Add(component componentInterface) {
 	fmt.Printf("Can not add to a leaf \n")
 }
 
-func (l *leaf) remove(component componentInterface) {
+func (l *leaf) Remove(component componentInterface) {
 	fmt.Printf("Can not remove to a leaf \n")
 }
 
-func (l *leaf) display(depth int) {
+func (l *leaf) Display(depth int) {
 	for i := 0; i < depth; i++ {
 		fmt.Printf("-")
 	}

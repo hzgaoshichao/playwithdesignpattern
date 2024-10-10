@@ -1,4 +1,4 @@
-package main
+package cms
 
 import (
 	"fmt"
@@ -17,11 +17,11 @@ func NewConcreteCompany(name string) *concreteCompany {
 	}
 }
 
-func (c *concreteCompany) add(com companyInterface) {
+func (c *concreteCompany) Add(com companyInterface) {
 	c.children = append(c.children, com)
 }
 
-func (c *concreteCompany) remove(com companyInterface) {
+func (c *concreteCompany) Remove(com companyInterface) {
 	for i, item := range c.children {
 		if reflect.DeepEqual(item, com) {
 			c.children = append(c.children[:i], c.children[i+1:]...)
@@ -29,20 +29,20 @@ func (c *concreteCompany) remove(com companyInterface) {
 	}
 }
 
-func (c *concreteCompany) display(depth int) {
+func (c *concreteCompany) Display(depth int) {
 	for i := 0; i < depth; i++ {
 		fmt.Printf("-")
 	}
 	fmt.Printf("%v \n", c.name)
 
 	for _, item := range c.children {
-		item.display(depth + 2)
+		item.Display(depth + 2)
 	}
 }
 
-func (c *concreteCompany) lineOfDuty() {
+func (c *concreteCompany) LineOfDuty() {
 
 	for _, item := range c.children {
-		item.lineOfDuty()
+		item.LineOfDuty()
 	}
 }
