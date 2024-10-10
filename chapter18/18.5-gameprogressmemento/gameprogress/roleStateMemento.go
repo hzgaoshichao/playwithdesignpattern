@@ -1,4 +1,4 @@
-package main
+package gameprogress
 
 type roleStateMemento struct {
 	vitality int

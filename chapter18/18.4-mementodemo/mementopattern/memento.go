@@ -1,4 +1,4 @@
-package main
+package mementopattern
 
 type memento struct {
 	state string
@@ -10,10 +10,10 @@ func NewMemento(state string) *memento {
 	}
 }
 
-func (m *memento) getState() string {
+func (m *memento) GetState() string {
 	return m.state
 }
 
-func (m *memento) setState(value string) {
+func (m *memento) SetState(value string) {
 	m.state = value
 }
