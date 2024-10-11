@@ -1,4 +1,4 @@
-package main
+package iteratorpattern
 
 type ConcreteIteratorDesc struct {
 	aggregate *ConcreteAggregate
@@ -13,11 +13,11 @@ func NewConcreteIteratorDesc(agg *ConcreteAggregate) *ConcreteIteratorDesc {
 	}
 }
 
-func (c *ConcreteIteratorDesc) first() any {
+func (c *ConcreteIteratorDesc) First() any {
 	return c.aggregate.getCurrentItem(c.aggregate.getCount() - 1)
 }
 
-func (c *ConcreteIteratorDesc) next() any {
+func (c *ConcreteIteratorDesc) Next() any {
 	var ret any
 	c.current--
 	if c.current >= 0 {
@@ -27,7 +27,7 @@ func (c *ConcreteIteratorDesc) next() any {
 	return ret
 }
 
-func (c *ConcreteIteratorDesc) isDone() bool {
+func (c *ConcreteIteratorDesc) IsDone() bool {
 	if c.current <= 0 {
 		return true
 	} else {
@@ -35,6 +35,6 @@ func (c *ConcreteIteratorDesc) isDone() bool {
 	}
 }
 
-func (c *ConcreteIteratorDesc) currentItem() any {
+func (c *ConcreteIteratorDesc) CurrentItem() any {
 	return c.aggregate.getCurrentItem(c.current)
 }

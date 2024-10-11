@@ -1,4 +1,4 @@
-package main
+package iteratorpattern
 
 type ConcreteAggregate struct {
 	items []any
@@ -10,7 +10,7 @@ func NewConcreteAggregate() *ConcreteAggregate {
 	}
 }
 
-func (c *ConcreteAggregate) createIterator() IteratorInterface {
+func (c *ConcreteAggregate) CreateIterator() IteratorInterface {
 	return NewConcreteIterator(c)
 }
 
@@ -18,7 +18,7 @@ func (c *ConcreteAggregate) getCount() int {
 	return len(c.items)
 }
 
-func (c *ConcreteAggregate) add(object any) {
+func (c *ConcreteAggregate) Add(object any) {
 	c.items = append(c.items, object)
 }
 
