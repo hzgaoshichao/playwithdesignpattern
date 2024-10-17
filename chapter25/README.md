@@ -41,8 +41,6 @@
 
 ![chapter25-02-umldemo.png](../images/chapter25-02-umldemo.png)
 
-- 带箭头的虚线表示依赖关系 (dependency)
-
 **源码下载地址**: [github.com/chapter25/][2]
 
 ## 典型应用场景
