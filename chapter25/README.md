@@ -22,7 +22,7 @@
 ## UML 结构
 下面的 UML 图是原书中使用 Java 的 UML 图, 由于 Golang 中没有抽象类, 所以在代码实现时需要将 Java 中的抽象类转换为接口来实现
 
-![chapter25-01-uml.png](/upload/chapter25-01-uml.png)
+![chapter25-01-uml.png](../images/chapter25-01-uml.png)
 
 - 带箭头的实线表示关联关系 (association)
 
@@ -39,18 +39,9 @@
 ## 代码实现
 示例代码 UML 图：
 
-![chapter25-02-umldemo.png](/upload/chapter25-02-umldemo.png)
+![chapter25-02-umldemo.png](../images/chapter25-02-umldemo.png)
 
 - 带箭头的虚线表示依赖关系 (dependency)
-
-
-**依赖关系 (dependency)**
-
-依赖关系 (dependency) 依赖关系是用一条带箭头的虚线表示的；如上图表示 Manager 依赖于 Request；他描述一个对象在运行期间会用到另一个对象的关系； 与关联关系不同的是，它是一种临时性的关系，通常在运行期间产生，并且随着运行时的变化； 依赖关系也可能发生变化；
-
-显然，依赖也有方向，双向依赖是一种非常糟糕的结构，我们总是应该保持单向依赖，杜绝双向依赖的产生；
-
-注：在最终代码中，依赖关系体现为类构造方法及类方法的传入参数，箭头的指向为调用关系；依赖关系除了临时知道对方外，还是“使用”对方的方法和属性
 
 **源码下载地址**: [github.com/chapter25/][2]
 
