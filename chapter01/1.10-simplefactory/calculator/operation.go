@@ -57,3 +57,18 @@ func CreateOperate(operate string) Operation {
 	}
 	return oper
 }
+
+// can use the map to replace the switch case
+var opFactory = map[string]func() Operation{
+	"+": func() Operation { return &Add{} },
+	"-": func() Operation { return &Sub{} },
+	"*": func() Operation { return &Mul{} },
+	"/": func() Operation { return &Div{} },
+}
+
+func CreateOperate02(operate string) Operation {
+	if factory, ok := opFactory[operate]; ok {
+		return factory()
+	}
+	return nil
+}
