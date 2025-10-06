@@ -8,11 +8,11 @@ import (
 func main() {
 	fmt.Println("学生甲抄的试卷：")
 	studentA := &tp.TestPaperA{}
-	tp.TemplateMethod(studentA)
+	studentA.TemplateMethod(studentA)
 
 	fmt.Println("学生乙抄的试卷：")
 	studentB := &tp.TestPaperB{}
-	tp.TemplateMethod(studentB)
+	studentB.TemplateMethod(studentB)
 }
 
 // 参考:

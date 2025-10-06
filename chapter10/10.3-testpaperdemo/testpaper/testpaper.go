@@ -29,8 +29,8 @@ func (t *testPaperCommon) testQuestion3(p testPaper) {
 	fmt.Printf("答案: %v \n", p.answer3())
 }
 
-func TemplateMethod(t testPaper) {
-	t.testQuestion1(t)
-	t.testQuestion2(t)
-	t.testQuestion3(t)
+func (t *testPaperCommon) TemplateMethod(test testPaper) {
+	t.testQuestion1(test)
+	t.testQuestion2(test)
+	t.testQuestion3(test)
 }
